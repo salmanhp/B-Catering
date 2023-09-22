@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+    .nav_bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        padding: 20px 0px;
+        background-color: #fff;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+    }
+    .nav_bar ul{
+        display: none;
+    }
+    .nav_bar p a {
+        text-decoration: none; 
+        padding: 10px 30px;
+        font-family: 'Times New Roman', Georgia, serif;
+        font-weight: bolder;
+        font-size: 15px;
+        line-height: 23px;
+        color: #000000;
+        letter-spacing: 3px;
+    }
+
+    .about_catering {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .about_catering img {
+        width: 95vw;
+        margin: 0px 10px;
+    }
+    .about_catering .right_section {
+        width: 95vw;
+        margin: 0px 10px;
+    }
+    .about_catering .right_section h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .about_catering .right_section p:first-child{
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+
+    .about_catering .right_section p:nth-child(2), p:last-child{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        color: #000000;
+        text-align: justify;
+    }
+
+    .our_menu{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .our_menu .left_section {
+        width: 95vw;
+        margin: 0px 10px;
+    }
+    .our_menu .left_section > h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content h2 {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content p {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #757575;
+    }
+    .our_menu .left_section .content {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        margin-top: 15px;
+    }
+    .our_menu img {
+        width: 95vw;
+        margin: 0px 10px;
+    }
+    .contact {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact .content {
+        width: 95vw;
+        margin: 0px 10px;
+    }
+    .contact .content h1{
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        padding: 10px 0px;
+        letter-spacing: 5px;
+    }
+    .contact .content p{
+        font-family: "Times New Roman", Georgia, serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+        padding: 10px 0px;
+    }
+    .contact .content h2{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 700;
+        line-height: 27px;
+        font-size: 18px;
+        color: #607d8b;
+        padding: 10px 0px;
+    }
+    .contact .content .contact_form input{
+        width: 95%; 
+        padding: 10px 5px;
+    }
+    .contact .content .contact_form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .content .contact_form form button{
+        width: 40%;
+        padding: 7px 1px;
+        cursor: pointer;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    .footer{
+        background-color: #F1F1F1;
+        padding: 50px 0px;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding: 20px 25px;
+        background-color: #fff;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+    }
+    .nav_bar p :hover{
+        background-color: #F1EFEF;
+    }
+    
+    .nav_bar p a {
+       text-decoration: none; 
+       padding: 10px 30px;
+       font-family: 'Times New Roman', Georgia, serif;
+       font-weight: bolder;
+       font-size: 15px;
+       line-height: 23px;
+       color: #000000;
+       letter-spacing: 3px;
+    }
+    .nav_bar ul {
+        display: flex;
+        width: 40%;
+        list-style: none;
+    }
+    .nav_bar ul li a {
+        text-decoration: none; 
+        padding: 10px 20px;
+        font-family: 'Times New Roman', Georgia, serif;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .nav_bar ul li :hover {
+        background-color: #F1EFEF;
+    }
+    .hero_section {
+        background-image: url('hamburger.jpg');
+        height: 100vh;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero_section h1{
+        position: absolute;
+        bottom: 20px; 
+        left: 25px; 
+        font-family: Playfair Display; 
+        font-weight: 400; 
+        font-size: 36px; 
+        line-height: 54px; 
+        color: #5B5C5E;
+    }
+
+    .about_catering {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .about_catering img{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .about_catering .right_section {
+        width: 469px;
+        margin-right: 10px;
+    }
+    
+    .about_catering .right_section h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    
+    .about_catering .right_section p:first-child {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    
+    .about_catering .right_section p:nth-child(2), p:last-child{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 16px;
+        color: #000000;
+        text-align: justify;
+    }
+    
+    .our_menu {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .our_menu img{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .our_menu .left_section {
+        width: 469px;
+        margin-left: 10px;
+    }
+    
+    .our_menu .left_section h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    
+    .our_menu .left_section .content h2 {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content p {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #757575;
+    }
+    .our_menu .left_section .content {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        margin-top: 15px;
+    }
+
+    .contact {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact .content {
+        width: 98vw;
+    }
+    .contact .content h1{
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        padding: 10px 0px;
+        letter-spacing: 5px;
+    }
+    .contact .content p{
+        font-family: "Times New Roman", Georgia, serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+        padding: 10px 0px;
+    }
+    .contact .content h2{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 700;
+        line-height: 27px;
+        font-size: 18px;
+        color: #607d8b;
+        padding: 10px 0px;
+    }
+    
+    .contact .content .contact_form input{
+        width: 98%; 
+        padding: 10px 5px;
+    }
+    .contact .content .contact_form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .content .contact_form form button{
+        width: 40%;
+        padding: 7px 1px;
+        cursor: pointer;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+    }
+    
+    .footer{
+        background-color: #F1F1F1;
+        padding: 50px 0px;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding: 20px 25px;
+        background-color: #fff;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+    }
+    
+    .nav_bar p :hover{
+        background-color: #F1EFEF;
+    }
+    
+    .nav_bar p a {
+       text-decoration: none; 
+       padding: 10px 30px;
+       font-family: 'Times New Roman', Georgia, serif;
+       font-weight: bolder;
+       font-size: 15px;
+       line-height: 23px;
+       color: #000000;
+       letter-spacing: 3px;
+    }
+    .nav_bar ul {
+        display: flex;
+        width: 20%;
+        list-style: none;
+        padding: 0px 30px;
+    }
+    
+    .nav_bar ul li a {
+       text-decoration: none; 
+       padding: 10px 30px;
+       font-family: 'Times New Roman', Georgia, serif;
+       font-weight: bold;
+       font-size: 15px;
+       line-height: 23px;
+       color: #000000;
+    }
+    .nav_bar ul li :hover {
+        background-color: #F1EFEF;
+    }
+    
+    
+    .hero_section {
+        background-image: url('hamburger.jpg');
+        height: 100vh;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero_section h1{
+        position: absolute;
+        bottom: 20px; 
+        left: 25px; 
+        font-family: Playfair Display; 
+        font-weight: 400; 
+        font-size: 36px; 
+        line-height: 54px; 
+        color: #5B5C5E;
+    }
+    
+    .about_catering {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .about_catering img {
+        width: 469px;
+    }
+    .about_catering .right_section {
+        width: 469px;
+    }
+    
+    .about_catering .right_section h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    
+    .about_catering .right_section p:first-child {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    
+    .about_catering .right_section p:nth-child(2), p:last-child{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 18px;
+        color: #000000;
+        text-align: justify;
+        word-spacing: 5px;
+    }
+    
+    .line{
+        background-color: rgb(219, 215, 215);
+        width: 990px;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 100px 0px;
+    }
+    
+    .our_menu {
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .our_menu img {
+        width: 469px;
+    }
+    .our_menu .left_section{
+        width: 469px;
+    }
+    
+    .our_menu .left_section > h1 {
+        text-align: center;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content h2 {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 5px;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content p {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #757575;
+        padding: 10px 0px;
+    }
+    .our_menu .left_section .content {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        margin-top: 15px;
+    }
+    
+    .contact {
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact .content {
+        width: 990px;
+    }
+    .contact .content h1{
+        font-family: "Playfair Display";
+        font-weight: 400;
+        line-height: 54px;
+        font-size: 36px;
+        color: #000000;
+        padding: 10px 0px;
+        letter-spacing: 5px;
+    }
+    .contact .content p{
+        font-family: "Times New Roman", Georgia, serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+        padding: 10px 0px;
+    }
+    .contact .content h2{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 700;
+        line-height: 27px;
+        font-size: 18px;
+        color: #607d8b;
+        padding: 10px 0px;
+    }
+    
+    .contact .content .contact_form input{
+        width: 100%; padding: 10px 5px;
+    }
+    .contact .content .contact_form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .content .contact_form form button{
+        width: 20%;
+        padding: 7px 1px;
+        cursor: pointer;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: 400;
+        line-height: 23px;
+        font-size: 15px;
+        color: #000000;
+    }
+    
+    .footer{
+        background-color: #F1F1F1;
+        padding: 50px 0px;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+}
